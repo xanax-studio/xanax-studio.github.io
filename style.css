@@ -1,0 +1,50 @@
+#hero {
+    background: url('img/adi-goldstein-sdtnZ4LgbWk-unsplash.jpg');
+    height: 1079px;
+    background-position-x: center;
+    background-size: cover;
+}
+
+/* #hero .img{
+    Add the blur effect
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    add greyscale
+    filter: grayscale(100%);
+} */
+
+#hero .navbar.is-transparent {
+    background-color: transparent;
+}
+
+#titolo {
+    font-size: 100px !important;
+    text-align: center;
+    /* color: rgb(15, 15, 15) !important; */
+    text-shadow: 2px 2px black;
+}
+
+#sottotitolo {
+    font-size: 25px !important;
+    text-align: center;
+    /* color: rgb(15, 15, 15) !important; */
+    text-shadow: 1px 1px black;
+}
+
+/* allinea i bottoni di richiesta al centro */
+#hero-buttons {
+    justify-content: center !important;
+}
+
+
+#contact {
+    background: url(img/vania-shows-N1I6IgDOGJs-unsplash.jpg);
+    background-size: cover;
+}
+
+
+/* ### SASS MIXINS 4 BULMA */
+/* .bulma-arrow-mixin {
+    @include arrow();
+} */

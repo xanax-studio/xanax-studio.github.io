@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xanax Studio - dove la musica nasce</title>
+
+    <link rel="shortcut icon" href="img/icon.ico" /> <!-- qui fa la favicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css"/>
+
+    <!--Bulma prefer dark mode plugin-->
+    <!-- <link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" /> -->
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/0246cf5ea7.js" crossorigin="anonymous"></script>
+
+    <!-- toggleBurger() implementation -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+        
+          // Add a click event on each of them
+          $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+            
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+            
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+            
+            });
+          });
+        }
+
+      });
+    </script>
+</head>
+<body>
+  <!-- HEADER at the top of the page-->
+  <!-- <header class="section has-background-dark py-4 has-text-white">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <span class="icon">
+            <i class="far fa-envelope" aria-hidden="true"></i>
+          </span>
+          email@company.com
+        </div>
+        <div class="column">
+          <span class="icon">
+            <i class="fas fa-phone-volume" aria-hidden="true"></i>
+          </span>
+          +44-754-554-222
+        </div>
+        <div class="column has-text-right-tablet">
+          <span class="icon">
+            <i class="fas fa-headphones-alt" aria-hidden="true"></i>
+          </span>
+          Support
+        </div>
+      </div>
+    </div>
+  </header> -->
+
+  <section class="section" id="hero">
+      <div class="container">
+          <!-- NAVBAR -->
+        <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <!-- <a class="navbar-item" href="https://bulma.io">
+              <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+            </a> -->
+        
+            <a role="button" class="navbar-burger has-text-weight-bold" aria-label="menu" aria-expanded="false" data-target="navMenu">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+        
+          <div id="navMenu" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="#">
+                Home
+              </a>
+        
+              <a class="navbar-item" href="#whoarewe"> <!-- #whoarewe -->
+                Chi siamo
+              </a>
+        
+              <a class="navbar-item" href="#services">
+                I nostri servizi
+              </a>
+
+              <a class="navbar-item" href="#contact">
+                Contatti
+              </a>
+            </div>
+        
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-dark">
+                    <strong>Sign up</strong>
+                  </a>
+                  <a class="button is-light">
+                    Log in
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="columns pt-6 pb-0">
+          <div class="column py-6 has-text-centered">
+            <h1 class="title is-size-1 mb-0 has-text-white-ter" id="titolo">
+              Xanax Studio
+            </h1>
+            <p class="subtile pb-3 is-size-2 has-text-white-ter" id="sottotitolo">
+              dove nasce la musica
+            </p>
+            <div class="field is-grouped mt-4 is-flex is-center" id="hero-buttons">
+              <p class="control">
+                <a class="button is-dark" href="#services">
+                  Di più su di noi
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="section" id="whoarewe">
+    <div class="container">
+
+      <div class="has-text-centered mb-6">
+        <h3 class="title is-2">Chi siamo</h3>
+        <h6 class="subtitle is-6 has-text-grey">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+        </h6>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="section" id="services">
+      <div class="container">
+        <div class="has-text-centered">
+          <h2 class="title is-2">Cosa offriamo</h2>
+          <h6 class="subtitle is-6 has-text-grey">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+          </h6>
+        </div>
+        <div class="columns pt-6">
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <div class="has-text-centered">
+                  <span class="icon is-size-1 py-6 my-3">
+                    <i class="fas fa-drum"></i>
+                  </span>
+                </div>
+                <p class="title is-4">
+                  Sala prove
+                </p>
+                <div class="content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Necessitatibus quisquam dolorem
+                </div>
+              </div>
+              <footer class="card-footer">
+                <a href="#" class="card-footer-item">Learn more</a>
+              </footer>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <div class="has-text-centered">
+                  <span class="icon is-size-1 py-6 my-3">
+                    <i class="fas fa-compact-disc"></i>
+                  </span>
+                </div>
+                <p class="title is-4">
+                  Studio di registrazione
+                </p>
+                <div class="content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Necessitatibus quisquam dolorem
+                </div>
+              </div>
+              <footer class="card-footer">
+                <a href="#" class="card-footer-item">Learn more</a>
+              </footer>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <div class="has-text-centered">
+                  <span class="icon is-size-1 py-6 my-3">
+                    <i class="fas fa-truck"></i>
+                  </span>
+                </div>
+                <p class="title is-4">
+                  Service per eventi
+                </p>
+                <div class="content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Necessitatibus quisquam dolorem
+                </div>
+              </div>
+              <footer class="card-footer">
+                <a href="#" class="card-footer-item">Learn more</a>
+              </footer>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <div class="has-text-centered">
+                  <span class="icon is-size-1 py-6 my-3">
+                    <i class="fas fa-guitar"></i>
+                  </span>
+                </div>
+                <p class="title is-4">
+                  Lezioni di strumento
+                </p>
+                <div class="content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Necessitatibus quisquam dolorem
+                </div>
+              </div>
+              <footer class="card-footer">
+                <a href="#" class="card-footer-item">Learn more</a>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+
+      <div class="has-text-centered mb-6">
+        <h3 class="title is-3 has-text-white">Contatti</h3>
+        <h6 class="subtitle is-6 has-text-white-ter">il modo più semplice e diretto per contattarci</h6>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <header class="card-header has-background-warning">
+              <p class="card-header-title">
+                Free Consultation
+              </p>
+            </header>
+            <div class="card-content">
+              <div class="field">
+                <label for="" class="label">Name</label>
+                <p class="control">
+                  <input type="text" class="input" placeholder="Name">
+                </p>
+              </div>
+              <div class="field">
+                <label for="" class="label">Phone number</label>
+                <p class="control">
+                  <input type="text" class="input" placeholder="Phone number">
+                </p>
+              </div>
+              <div class="field">
+                <label for="" class="label">Email</label>
+                <p class="control">
+                  <input type="email" class="input" placeholder="Email">
+                </p>
+              </div>
+              <div class="field">
+                <p class="control">
+                  <button class="button is-warning">
+                    Submit
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column has-text-white py-6 pl-6">
+          <span class="icon is-size-1 pb-6 my-3 has-text-grey-lighter">
+            <i class="fas fa-quote-left"></i>
+          </span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            At minima dolores ipsum adipisci iusto provident, consectetur, 
+            aliquam voluptatum, perferendis debitis eaque quam doloremque 
+            quisquam fugiat. Eligendi sit illum voluptatibus fuga?
+          </p>
+          <p class="has-text-weight-bold pt-3 is-size-4">John Doe</p>
+          <span class="icon is-size-1 pt-6 pr-3 my-3 has-text-grey-lighter is-pulled-right">
+            <i class="fas fa-quote-right"></i>
+          </span>
+        </div>
+      </div>
+      
+      <div class="columns mt-6"> 
+        <div class="column">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Vienici a trovare!
+              </p>
+            </header>
+            <div class="card-content">
+              <div class="box">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.0579869780067!2d15.05044351577094!3d37.553697579800314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313fd94b9ad6913%3A0xb8d497550ba33804!2sXanax%20Studio!5e0!3m2!1sit!2sit!4v1641576067012!5m2!1sit!2sit" width="100%" height="465" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
